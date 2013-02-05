@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Exchange
+Bundle-SymbolicName: cc.xuloo.betfair.exchange
+Bundle-Version: 1.0.0
+Export-Package: com.betfair.publicapi.types.exchange.v5,
+ com.betfair.publicapi.v5.bfexchangeservice
+Require-Bundle: javax.xml,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

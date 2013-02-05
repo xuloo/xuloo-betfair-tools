@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model
+Bundle-SymbolicName: cc.xuloo.betfair.model
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: cc.xuloo.betfair.exchange;bundle-version="1.0.0",
+ cc.xuloo.betfair.global;bundle-version="1.0.0"
+Export-Package: cc.xuloo.betfair.model

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Global
+Bundle-SymbolicName: cc.xuloo.betfair.global
+Bundle-Version: 1.0.0
+Export-Package: com.betfair.publicapi.types.global.v3,
+ com.betfair.publicapi.v3.bfglobalservice
+Require-Bundle: javax.xml,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
