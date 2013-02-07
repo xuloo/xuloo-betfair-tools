@@ -5,5 +5,8 @@ Bundle-SymbolicName: cc.xuloo.betfair.model
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: cc.xuloo.betfair.exchange;bundle-version="1.0.0",
- cc.xuloo.betfair.global;bundle-version="1.0.0"
+ cc.xuloo.betfair.global;bundle-version="1.0.0",
+ cc.xuloo.apache.commons.lang3;bundle-version="1.0.0",
+ cc.xuloo.commons.logging;bundle-version="1.1.1",
+ cc.xuloo.joda.time;bundle-version="1.0.0"
 Export-Package: cc.xuloo.betfair.model
