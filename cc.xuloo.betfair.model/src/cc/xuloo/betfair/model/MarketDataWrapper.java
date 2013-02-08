@@ -4,7 +4,9 @@ public class MarketDataWrapper {
 
 	private MarketData marketData;
 	
-	private boolean matched;
+	private boolean matched = false;
+	
+	private boolean canMatch = true;
 	
 	public MarketDataWrapper(MarketData marketData) {
 		this.marketData = marketData;
@@ -20,5 +22,13 @@ public class MarketDataWrapper {
 	
 	public void setMatched(boolean matched) {
 		this.matched = matched;
+	}
+	
+	public void setBeMatched(boolean canMatch) {
+		this.canMatch = canMatch;
+	}
+	
+	public boolean canBeMatched() {
+		return canMatch;
 	}
 }
