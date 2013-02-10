@@ -3,6 +3,8 @@ package cc.xuloo.betfair.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class BetfairSport {
 	
 	private static List<BetfairSport> SPORTS;
@@ -113,13 +115,21 @@ public class BetfairSport {
 	}
 	
 	public static BetfairSport forName(String name) {
+		
+		if (StringUtils.equalsIgnoreCase(name, "football")) return forNameFromList("American Football");
+		if (StringUtils.equalsIgnoreCase(name, "soccer")) return forNameFromList("Football");
+		
+		return forNameFromList(name);
+	}
+
+	private static BetfairSport forNameFromList(String name) {
 		for (BetfairSport sport : SPORTS) {
-			if (sport.getName().toLowerCase().equals(name.toLowerCase())) return sport;
+			if (StringUtils.equalsIgnoreCase(sport.getName(), name)) return sport;
 		}
 		
 		return null;
 	}
-
+	
 	private String name;
 	
 	private int id;

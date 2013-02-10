@@ -37,7 +37,7 @@ public class BetfairParser {
 			}
 		}
 		
-		System.out.println("There are " + entries.size() + " market data entries");
+		//System.out.println("There are " + entries.size() + " market data entries");
 		
 		return entries;
 	}

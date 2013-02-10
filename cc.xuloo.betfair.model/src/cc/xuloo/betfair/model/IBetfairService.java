@@ -5,6 +5,7 @@ import java.util.List;
 import org.joda.time.DateTime;
 
 import com.betfair.publicapi.types.exchange.v5.Market;
+import com.betfair.publicapi.types.exchange.v5.MarketPrices;
 import com.betfair.publicapi.types.global.v3.BFEvent;
 import com.betfair.publicapi.types.global.v3.EventType;
 
@@ -19,4 +20,6 @@ public interface IBetfairService {
 	Market getMarket(int id);
 	
 	List<BFEvent> getEvent(int parentId);
+	
+	MarketPrices getMarketPrices(int id);
 }
