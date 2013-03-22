@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="cc.xuloo.betfair.service">
-   <implementation class="cc.xuloo.betfair.service.BetfairService"/>
+   <implementation class="cc.xuloo.betfair.model.internal.BlockingBetfairService"/>
    <service>
       <provide interface="cc.xuloo.betfair.model.IBetfairService"/>
    </service>

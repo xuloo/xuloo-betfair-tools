@@ -64,7 +64,9 @@ public class BetfairParser {
 		market.marketName = records[1];
 		market.marketType = records[2];
 		market.marketStatus = records[3];
+		//System.out.println("creating data from '" + records[4] + "'");
 		market.eventDate = new DateTime(Long.parseLong(records[4]));
+		//System.out.println(market.eventDate);
 		market.menuPath = records[5];
 		
 		//System.out.println("event hierarchy -- " + records[6]);

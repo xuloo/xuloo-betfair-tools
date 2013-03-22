@@ -117,7 +117,7 @@ public class BetfairSport {
 	public static BetfairSport forName(String name) {
 		
 		if (StringUtils.equalsIgnoreCase(name, "football")) return forNameFromList("American Football");
-		if (StringUtils.equalsIgnoreCase(name, "soccer")) return forNameFromList("Football");
+		//if (StringUtils.equalsIgnoreCase(name, "soccer")) return forNameFromList("Football");
 		
 		return forNameFromList(name);
 	}
@@ -149,5 +149,13 @@ public class BetfairSport {
 	
 	public boolean equals(BetfairSport other) {
 		return name.equals(other.getName()) && id == other.getId();
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "BetfairSport [name=" + name + "]";
 	}
 }

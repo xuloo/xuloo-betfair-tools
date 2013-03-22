@@ -4,7 +4,10 @@ Bundle-Name: Service
 Bundle-SymbolicName: cc.xuloo.betfair.service
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Require-Bundle: cc.xuloo.betfair.exchange;bundle-version="1.0.0",
+Require-Bundle: cc.xuloo.ds;bundle-version="1.0.0",
+ cc.xuloo.betfair.exchange;bundle-version="1.0.0",
  cc.xuloo.betfair.global;bundle-version="1.0.0",
- cc.xuloo.betfair.model;bundle-version="1.0.0"
+ cc.xuloo.betfair.model;bundle-version="1.0.0",
+ cc.xuloo.joda.time;bundle-version="1.0.0"
 Service-Component: component.xml
+Bundle-ActivationPolicy: lazy
