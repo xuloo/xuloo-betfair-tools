@@ -219,13 +219,13 @@ public class BlockingBetfairService extends ThreadedProcessor implements IBetfai
 		@Override 
 		public List<MarketData> call() throws Exception {
 			
-			System.out.println("getting all markets");
+//			System.out.println("getting all markets");
 			
 			GetAllMarketsResp response = getExchangeService().getAllMarkets(request);
 			
 			if (response.getErrorCode().equals(GetAllMarketsErrorEnum.OK)) {
 				
-				System.out.println("Successfully retrieved all markets");
+//				System.out.println("Successfully retrieved all markets");
 				
 				if (!response.getHeader().getSessionToken().equals(sessionToken)) {
 					sessionToken = response.getHeader().getSessionToken();
@@ -287,13 +287,13 @@ public class BlockingBetfairService extends ThreadedProcessor implements IBetfai
 		@Override
 		public List<EventType> call() throws Exception {
 			
-			System.out.println("getting all event types");
+//			System.out.println("getting all event types");
 			
 			GetEventTypesResp response = getGlobalService().getAllEventTypes(request);
 			
 			if (response.getErrorCode().equals(GetEventsErrorEnum.OK)) {
 				
-				System.out.println("all event types successfully retrieved");
+//				System.out.println("all event types successfully retrieved");
 				
 				if (!response.getHeader().getSessionToken().equals(sessionToken)) {
 					sessionToken = response.getHeader().getSessionToken();
@@ -350,13 +350,13 @@ public class BlockingBetfairService extends ThreadedProcessor implements IBetfai
 		@Override
 		public Market call() throws Exception {
 			
-			System.out.println("getting market");
+//			System.out.println("getting market");
 			
 			GetMarketResp response = getExchangeService().getMarket(request);
 			
 			if (response.getErrorCode().equals(GetMarketErrorEnum.OK)) {
 				
-				System.out.println("market successfully retrieved");
+//				System.out.println("market successfully retrieved");
 				
 				if (!response.getHeader().getSessionToken().equals(sessionToken)) {
 					sessionToken = response.getHeader().getSessionToken();
@@ -414,13 +414,13 @@ public class BlockingBetfairService extends ThreadedProcessor implements IBetfai
 		@Override 
 		public List<BFEvent> call() throws Exception {
 			
-			System.out.println("getting event");
+//			System.out.println("getting event");
 			
 			GetEventsResp response = getGlobalService().getEvents(request);
 			
 			if (response.getErrorCode().equals(GetEventsErrorEnum.OK)) {
 				
-				System.out.println("event successfully retrieved");
+//				System.out.println("event successfully retrieved");
 				
 				if (!response.getHeader().getSessionToken().equals(sessionToken)) {
 					sessionToken = response.getHeader().getSessionToken();
@@ -478,13 +478,13 @@ public class BlockingBetfairService extends ThreadedProcessor implements IBetfai
 		@Override
 		public MarketPrices call() throws Exception {
 			
-			System.out.println("getting market prices");
+//			System.out.println("getting market prices");
 			
 			GetMarketPricesResp response = getExchangeService().getMarketPrices(request);
 			
 			if (response.getErrorCode().equals(GetMarketPricesErrorEnum.OK)) {
 				
-				System.out.println("market prices successfully retrieved");
+//				System.out.println("market prices successfully retrieved");
 				
 				if (!response.getHeader().getSessionToken().equals(sessionToken)) {
 					sessionToken = response.getHeader().getSessionToken();
